@@ -1,0 +1,89 @@
+[
+    {
+      "id": 1,
+      "name": "Chicken Stir Fry",
+      "description": "A quick and delicious stir-fry dish packed with flavor.",
+      "ingredients": [
+        "550 g chicken",
+        "120 ml soy sauce",
+        "200 g basil leaf",
+        "400 g mushroom"
+      ],
+      "pretime": "30 min",
+      "calories": "320 calories",
+      "img": "https://i.ibb.co/4W5RkgB/21544.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Vegetable Pasta",
+      "description": "A hearty and nutritious pasta dish loaded with colorful vegetables.",
+      "ingredients": [
+        "300 g pasta",
+        "2 cups chopped vegetables (bell peppers, zucchini, carrots)",
+        "1 cup tomato sauce",
+        "1/4 cup grated parmesan cheese"
+      ],
+      "pretime": "25 min",
+      "calories": "280 calories",
+      "img": "https://i.ibb.co/LnrRj2R/2147926021.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Grilled Salmon",
+      "description": "Juicy salmon fillets seasoned and grilled to perfection.",
+      "ingredients": [
+        "4 salmon fillets",
+        "2 tbsp olive oil",
+        "1 lemon (sliced)",
+        "Salt and pepper to taste"
+      ],
+      "pretime": "20 min",
+      "calories": "350 calories",
+      "img": "https://i.ibb.co/56GWY2v/44855.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Caprese Salad",
+      "description": "A classic Italian salad featuring ripe tomatoes, fresh mozzarella, and basil leaves.",
+      "ingredients": [
+        "2 large tomatoes",
+        "200 g fresh mozzarella",
+        "Handful of fresh basil leaves",
+        "2 tbsp balsamic vinegar"
+      ],
+      "pretime": "15 min",
+      "calories": "180 calories",
+      "img": "https://i.ibb.co/7Jgvx7r/11033.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Mango Smoothie",
+      "description": "A refreshing and tropical smoothie bursting with the flavor of ripe mangoes.",
+      "ingredients": [
+        "2 ripe mangoes (peeled and diced)",
+        "1 cup plain yogurt",
+        "1/2 cup orange juice",
+        "1 tbsp honey"
+      ],
+      "pretime": "10 min",
+      "calories": "200 calories",
+      "img": "https://i.ibb.co/tHZdbjQ/35218.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Beef Tacos",
+      "description": "Satisfying tacos filled with seasoned beef, fresh vegetables, and zesty salsa.",
+      "ingredients": [
+        "400 g ground beef",
+        "1 packet taco seasoning",
+        "8 small tortillas",
+        "1 cup shredded lettuce",
+        "1/2 cup diced tomatoes",
+        "1/4 cup chopped cilantro"
+      ],
+      "pretime": "35 min",
+      "calories": "380 calories",
+      "img": "https://i.ibb.co/xXLLL1w/8286.jpg"
+    }
+  ]
+  

@@ -12,6 +12,8 @@ body{
 
 .bg-image{
     background-image: url(./assets/images/banner.png);
-    height: 600px;
-    
+    height: 600px;   
+}
+.fira{
+    font-family: "Fira Sans";
 }
