@@ -9,16 +9,16 @@ const Cook = () => {
             <div className="overflow-x-auto mt-6">
                 <table className='table'>
                     {/* head */}
-                    <thead>
-                        <tr className='fira text-base text-[#878787] font-medium'>
+                    <thead className='font-medium'>
+                        <tr className='fira text-base text-[#878787] '>
                             <th></th>
                             <th>Name</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
+                            <th>Time</th>
+                            <th>Calories</th>
                         </tr>
                     </thead>
                     <tbody className='fira bg-[#28282808] text-base text-[#282828B2]'>
-                        
+
                         <tr>
                             <th>1</th>
                             <td className=''>Chicken Stir Fry</td>
@@ -26,8 +26,9 @@ const Cook = () => {
                             <td>400 calories</td>
                             <td><button className="btn bg-[#0BE58A]  rounded-l-full text-black rounded-r-full text-base font-medium p-4 flex-nowrap border-none">Preparing</button></td>
                         </tr>
-                      
+
                     </tbody>
+                    
                 </table>
             </div>
         </div>
