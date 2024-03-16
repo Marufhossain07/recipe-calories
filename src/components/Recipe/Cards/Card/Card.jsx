@@ -2,11 +2,12 @@ import { LuClock3 } from "react-icons/lu";
 import { AiOutlineFire } from "react-icons/ai";
 import PropTypes from 'prop-types';
 
-const Card = ({recipe}) => {
+const Card = ({recipe, handleAddToCook}) => {
     const {name , description,ingredients ,pretime, calories , img} = recipe;
    
     return (
-        <div className='border text-left rounded-2xl border-[#28282833] p-6'>
+        <div className="border text-left   p-6 border-[#28282833] rounded-2xl flex flex-col justify-between">
+        <div className=' '>
             <img className='w-full h-[200px] rounded-2xl' src={img} alt="" />
             <h3 className='text-xl pt-6 font-semibold'>{name}</h3>
             <p className='fira pt-4 text-[#878787]'>{description}</p>
@@ -22,7 +23,8 @@ const Card = ({recipe}) => {
                 <p className="flex items-center gap-2 text-[#282828CC]"><LuClock3 className="text-2xl"/>{pretime}</p>
                 <p className="flex items-center gap-2 text-[#282828CC]"><AiOutlineFire className="text-2xl"/>{calories}</p>
             </div>
-            <button className="btn bg-[#0BE58A]  rounded-l-full text-black rounded-r-full text-lg mr-6 font-medium p-5 flex-nowrap border-none">Want to Cook</button>
+        </div>
+        <button onClick={()=> handleAddToCook(recipe)} className="btn bg-[#0BE58A]  rounded-l-full text-black rounded-r-full text-lg mr-6 font-medium w-1/2 flex-nowrap border-none">Want to Cook</button>
         </div>
     );
 };

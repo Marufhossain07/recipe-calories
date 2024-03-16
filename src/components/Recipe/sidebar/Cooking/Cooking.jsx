@@ -1,10 +1,12 @@
 
 import PropTypes from 'prop-types';
 
-const Cooking = () => {
-    return (
+const Cooking = ({cooking, time,calories}) => {
+    
+    
+        return (
         <div className='mt-8'>
-        <h3 className='text-2xl font-semibold'>Currently cooking: 02</h3>
+        <h3 className='text-2xl font-semibold'>Currently cooking: {cooking.length}</h3>
         <hr className='bg-[#28282826] mx-auto w-[350px] mt-4' />
         <div className="overflow-x-auto mt-6">
             <table className='table'>
@@ -19,23 +21,27 @@ const Cooking = () => {
                 </thead>
                 <tbody className='fira bg-[#28282808] text-base text-[#282828B2]'>
                     
-                    <tr>
-                        <th>1</th>
-                        <td className=''>Chicken Stir Fry</td>
-                        <td>20 minutes</td>
-                        <td>400 calories</td>
+                    {
+                        cooking.map((cook,idx)=>
+                            <tr key={cook.id}>
+                        <th>{idx+1}</th>
+                        <td className=''>{cook.name}</td>
+                        <td>{cook.pretime} min</td>
+                        <td>{cook.calories} calories</td>
                     </tr>
+                            )
+                    }
                   
                 </tbody>
                 <tfoot className='text-base font-medium text-[#282828CC]'>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td>Total Time = <br />
-                                45 minutes</td>
+                <tr>
+                    <td></td>
+                     <td></td> 
+                     <td>Total Time = <br />
+                               {time} minutes</td>
                             <td>Total Calories = <br />
-                                1050 calories</td>
-                        </tr>
+                                {calories} calories</td>
+                                </tr>
                     </tfoot>
             </table>
         </div>

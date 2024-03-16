@@ -2,12 +2,12 @@
 import PropTypes from 'prop-types';
 import Card from './Card/Card';
 
-const Cards = ({recipes}) => {
-    console.log(recipes)
+const Cards = ({recipes, handleAddToCook}) => {
+
     return (
-        <div className='grid grid-cols-2 gap-6'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
             {
-                recipes.map((recipe, idx)=> <Card key={idx} recipe={recipe}></Card>)
+                recipes.map((recipe, idx)=> <Card key={idx} handleAddToCook={handleAddToCook} recipe={recipe}></Card>)
             }
         </div>
     );

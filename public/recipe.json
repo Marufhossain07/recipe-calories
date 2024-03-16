@@ -9,8 +9,8 @@
         "200 g basil leaf",
         "400 g mushroom"
       ],
-      "pretime": "30 min",
-      "calories": "320 calories",
+      "pretime": 30,
+      "calories": 320,
       "img": "https://i.ibb.co/4W5RkgB/21544.jpg"
     },
     {
@@ -23,8 +23,8 @@
         "1 cup tomato sauce",
         "1/4 cup grated parmesan cheese"
       ],
-      "pretime": "25 min",
-      "calories": "280 calories",
+      "pretime": 25,
+      "calories": 280,
       "img": "https://i.ibb.co/LnrRj2R/2147926021.jpg"
     },
     {
@@ -37,8 +37,8 @@
         "1 lemon (sliced)",
         "Salt and pepper to taste"
       ],
-      "pretime": "20 min",
-      "calories": "350 calories",
+      "pretime": 20,
+      "calories": 350,
       "img": "https://i.ibb.co/56GWY2v/44855.jpg"
     },
     {
@@ -51,8 +51,8 @@
         "Handful of fresh basil leaves",
         "2 tbsp balsamic vinegar"
       ],
-      "pretime": "15 min",
-      "calories": "180 calories",
+      "pretime": 15,
+      "calories": 180,
       "img": "https://i.ibb.co/7Jgvx7r/11033.jpg"
     },
     {
@@ -65,8 +65,8 @@
         "1/2 cup orange juice",
         "1 tbsp honey"
       ],
-      "pretime": "10 min",
-      "calories": "200 calories",
+      "pretime": 10,
+      "calories": 200,
       "img": "https://i.ibb.co/tHZdbjQ/35218.jpg"
     },
     {
@@ -81,8 +81,8 @@
         "1/2 cup diced tomatoes",
         "1/4 cup chopped cilantro"
       ],
-      "pretime": "35 min",
-      "calories": "380 calories",
+      "pretime": 35,
+      "calories": 380,
       "img": "https://i.ibb.co/xXLLL1w/8286.jpg"
     }
   ]
