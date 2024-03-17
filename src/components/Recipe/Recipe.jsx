@@ -8,7 +8,7 @@ const Recipe = ({recipes, handleAddToCook, cooks,handleAddToCooking,cooking,time
         <div className='text-center mt-24'>
             <h3 className='text-[40px] mb-6 font-semibold'>Our Recipes</h3>
             <p>Dive into a world of flavor with our diverse collection of tantalizing recipes, crafted with <br /> passion and expertise. Explore culinary inspiration that's sure to impress.</p>
-            <div className='flex flex-col-reverse md:flex-row lg:flex-row gap-6 mt-12'>
+            <div className='flex flex-col-reverse lg:flex-row gap-6 mt-12'>
                 <Cards handleAddToCook={handleAddToCook} recipes={recipes}></Cards>
                 <Sidebar calories={calories} time={time} cooking={cooking} handleAddToCooking={handleAddToCooking} cooks={cooks}></Sidebar>
             </div>
@@ -18,7 +18,13 @@ const Recipe = ({recipes, handleAddToCook, cooks,handleAddToCooking,cooking,time
 };
 
 Recipe.propTypes = {
-
+    recipes: PropTypes.array.isRequired,
+    handleAddToCook: PropTypes.func.isRequired,
+    cooks: PropTypes.array.isRequired,
+    handleAddToCooking: PropTypes.func.isRequired,
+    cooking: PropTypes.array.isRequired,
+    time:PropTypes.number.isRequired,
+    calories:PropTypes.number.isRequired
 };
 
 export default Recipe;

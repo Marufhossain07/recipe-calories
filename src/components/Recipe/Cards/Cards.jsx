@@ -5,7 +5,7 @@ import Card from './Card/Card';
 const Cards = ({recipes, handleAddToCook}) => {
 
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
+        <div className='grid p-2 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6'>
             {
                 recipes.map((recipe, idx)=> <Card key={idx} handleAddToCook={handleAddToCook} recipe={recipe}></Card>)
             }
@@ -14,7 +14,8 @@ const Cards = ({recipes, handleAddToCook}) => {
 };
 
 Cards.propTypes = {
-    recipes: PropTypes.array.isRequired
+    recipes: PropTypes.array.isRequired,
+    handleAddToCook: PropTypes.func.isRequired
 };
 
 export default Cards;

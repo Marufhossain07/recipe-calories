@@ -19,7 +19,7 @@ const Cooking = ({cooking, time,calories}) => {
                         <th>Calories</th>
                     </tr>
                 </thead>
-                <tbody className='fira bg-[#28282808] text-base text-[#282828B2]'>
+                <tbody className='fira bg-[#28282808]  text-base text-[#282828B2]'>
                     
                     {
                         cooking.map((cook,idx)=>
@@ -50,7 +50,9 @@ const Cooking = ({cooking, time,calories}) => {
 };
 
 Cooking.propTypes = {
-    
+    cooking: PropTypes.array.isRequired,
+    time:PropTypes.number.isRequired,
+    calories:PropTypes.number.isRequired
 };
 
 export default Cooking;

@@ -30,7 +30,8 @@ const Card = ({recipe, handleAddToCook}) => {
 };
 
 Card.propTypes = {
-    
+    recipe: PropTypes.array.isRequired,
+    handleAddToCook: PropTypes.func.isRequired
 };
 
 export default Card;
