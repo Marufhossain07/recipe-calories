@@ -40,7 +40,8 @@ const Cook = ({cooks, handleAddToCooking}) => {
 };
 
 Cook.propTypes = {
-    cooks: PropTypes.array.isRequired
+    cooks: PropTypes.array.isRequired,
+    handleAddToCooking: PropTypes.func.isRequired
 };
 
 export default Cook;

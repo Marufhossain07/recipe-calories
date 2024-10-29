@@ -1,9 +1,8 @@
-
 import PropTypes from 'prop-types';
 import Cards from './Cards/Cards';
 import Sidebar from './sidebar/Sidebar';
 
-const Recipe = ({recipes, handleAddToCook, cooks,handleAddToCooking,cooking,time, calories}) => {
+const Recipe = ({ recipes, handleAddToCook, cooks, handleAddToCooking, cooking, time, calories }) => {
     return (
         <div className='text-center mt-24'>
             <h3 className='text-[40px] mb-6 font-semibold'>Our Recipes</h3>
@@ -13,7 +12,6 @@ const Recipe = ({recipes, handleAddToCook, cooks,handleAddToCooking,cooking,time
                 <Sidebar calories={calories} time={time} cooking={cooking} handleAddToCooking={handleAddToCooking} cooks={cooks}></Sidebar>
             </div>
         </div>
-
     );
 };
 
@@ -23,8 +21,8 @@ Recipe.propTypes = {
     cooks: PropTypes.array.isRequired,
     handleAddToCooking: PropTypes.func.isRequired,
     cooking: PropTypes.array.isRequired,
-    time:PropTypes.number.isRequired,
-    calories:PropTypes.number.isRequired
+    time: PropTypes.number.isRequired,
+    calories: PropTypes.number.isRequired
 };
 
 export default Recipe;
