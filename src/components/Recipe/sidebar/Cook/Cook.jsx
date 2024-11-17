@@ -1,9 +1,8 @@
 
 import PropTypes from 'prop-types';
 
-const Cook = ({cooks, handleAddToCooking}) => {
+const Cook = ({ cooks, handleAddToCooking }) => {
 
-    // console.log(cooks)
     return (
         <div>
             <h3 className='text-2xl font-semibold'>Want to cook: {cooks.length}</h3>
@@ -20,19 +19,19 @@ const Cook = ({cooks, handleAddToCooking}) => {
                         </tr>
                     </thead>
                     <tbody className='fira bg-[#28282808] text-base text-[#282828B2]'>
-                            {
-                                cooks.map((cook,idx)=> 
-                                    <tr key={idx}>
-                                        <th>{idx +1}</th>
+                        {
+                            cooks.map((cook, idx) =>
+                                <tr key={idx}>
+                                    <th>{idx + 1}</th>
                                     <td className=''>{cook.name}</td>
-                                    <td>{cook.pretime} min</td>
-                                    <td>{cook.calories} calories</td>
-                                    <td><button onClick={()=>handleAddToCooking(cook,cook.id,cook.pretime,cook.calories)} className="btn bg-[#0BE58A]  rounded-l-full text-black rounded-r-full text-base font-medium p-4 flex-nowrap border-none">Preparing</button></td>
-                                    </tr>   
-                                    )
-                            }
+                                    <td>{cook?.pretime} min</td>
+                                    <td>{cook?.calories} calories</td>
+                                    <td><button onClick={() => handleAddToCooking(cook, cook.id, cook.pretime, cook.calories)} className="btn bg-[#0BE58A]  rounded-l-full text-black rounded-r-full text-base font-medium p-4 flex-nowrap border-none">Preparing</button></td>
+                                </tr>
+                            )
+                        }
                     </tbody>
-                    
+
                 </table>
             </div>
         </div>
